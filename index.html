@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Meu primeiro App</title>
+    <link rel="stylesheet" href="css/framework7.bundle.min.css">
+    <link rel="stylesheet" href="css/framework7-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="app">
+        <div class="panel panel-left">
+            <div class="block ">
+           
+             
+              <div class="item-title"><i class="f7-icons padding-right">gear_alt_fill</i><strong >Informações do aplicativo</strong>  </div>
+                  <div class="list accordion-list">
+                    <ul>
+                        
+                      <li class="accordion-item"><a href="#" class="item-content item-link">
+                        <div class="item-inner">
+                          <div class="item-title">Sobre</div>
+                        </div></a>
+                      <div class="accordion-item-content">
+                        <div class="block">
+                          <div> Uma calculara de combustível que facilita o seu dia a dia, aonde você saberá confome o resultado a melhor opção de consumo;  </div>
+                      </div>
+                    </li>
+        
+                        <li>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title">Versão 1.0.2 </div>
+                                      
+                                </div>
+                            </div>
+        
+                            </li>
+           
+                        
+                    
+                    </ul>
+                   
+                  </div>
+                
+                
+            </div>
+            <!-- botãogit remote add origin https://github.com/Renata001/Ideias.git do mini-menu
+              <div class="fab fab-right-bottom">
+              
+              <a class="bg-color-yellow text-color-black " href="index.html" data-transition="f7-cover"><i class="f7-icons ">arrow_right_circle_fill</i></a>
+          </div> -->
+        </div>
+    
+        <div class="view view-main">
+            
+            <div data-name="home" class="page ">
+             
+                <!-- Top Navbar -->
+                <div class="navbar">
+                    <div class="navbar-bg"></div>
+                    <div class="navbar-inner bg-color-blue">
+                        <div class="left">
+                            <a href="#" data-panel=".panel-left" class="panel-open bg">
+                                <icon class="f7-icons text-color-white padding">menu</icon>
+                            </a>
+                        </div>
+                        <div class="right">
+                          
+                                <img src="img/fuel.png" alt="logo" class="padding-right">
+                        
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- FIM NAVBAR -->
+
+                <!-- Inicio conteudo da página Index -->
+                <div class="page-content ">
+                    <div class="block ">
+                        <!---- calculo -->
+                      
+                        <div class="list " id="my-form">
+                           
+                            <div class="list no-hairlines-md ">
+                                
+                                    <h4 class="padding-left">Calculadora de combustível</h4>
+                             
+                                <ul>
+                                    <li class="item-content item-input item-input-with-info text-color-black">
+
+                                        <div class="item-inner w-50">
+                                            <di class="item-title item-label ">Preço do Etanol: </di>
+                                        </div>
+
+                                        <div class="item-input-wrap">
+                                            <input type="number" id="etanol" data-mask="0.000" placeholder="R$ 0,000">
+
+                                        </div>
+
+                                    </li>
+                                    <li class="item-content item-input item-input-with-info text-color-black">
+
+                                        <div class="item-inner w-50">
+                                            <di class="item-title item-label ">Preço da Gasolina: </di>
+                                        </div>
+
+                                        <div class="item-input-wrap">
+                                            <input type="number" id="gasolina" data-mask="0.000" placeholder="R$ 0,000">
+
+                                        </div>
+
+                                    </li>
+
+
+                                </ul>
+                                <div class="qual padding">
+                                    <h4>Abasteça hoje com: <span class="mensagem"></span></h4>
+                                    <span class="porc small"></span>
+                                </div>
+                                <button class="button button-large button-fill bg-color-blue text-color-white" id="btn-calcular">
+                                  Calcular
+                                </button>
+                            </div>
+                        </div>
+                        <!-- fim calculo -->
+
+                        <!-- novo calculo -->
+
+                        <div class="list  " id="my-form novo-calculo">
+                            <div class="list no-hairlines-md ">
+                                <ul>
+                                    <li class="item-content item-input item-input-with-info text-color-black">
+
+                                        <div class="item-inner w-50 dinheiro">
+                                            <di class="item-title item-label ">Dinheiro: </di>
+                                        </div>
+
+                                        <div class="item-input-wrap">
+                                            <input type="number" id="dinheiro" data-mask="000.00" data-mask-reverse="true" placeholder="R$ 00,00">
+
+                                        </div>
+
+                                    </li>
+
+                                    <li class="item-content item-input item-input-with-info text-color-black">
+
+                                        <div class="item-inner w-50">
+                                            <div class="item-title item-label litro">Litros: </div>
+                                        </div>
+
+                                        <div class="item-input-wrap">
+                                            <input type="number" id="litros" data-mask=" 000.00" data-mask-reverse="true" placeholder="ML´s">
+
+                                        </div>
+
+                                    </li>
+
+                                </ul>
+                                <div class="media f7-p  padding">
+                                    <label class="litros-visible">Por volta de<span id="lb_litros"></span>
+                                        Litros de <span class="result"></span>
+                                    </label>
+                                    <label class="dinheiro-visible">Valor á pagar R$<span id="lb_dinheiro"></span>
+                                    </label>
+                                </div>
+                                <button class="button button-large button-fill bg-color-blue text-color-white btn-novo">
+                                  Novo calculo
+                                </button>
+                            </div>
+                        </div>
+                        <!-- FIM novo calculo -->
+
+                        <div class="consumo" id="novo-calculo">
+                            <span class="item-label">Média de consumo do veículo!</span>
+                            <div class="list no campos">
+                                <ul>
+                                    <li class="item-content item-input inline-label">
+                                        <div class="item-input">
+                                            Cidade: <input type="number" id="cidade" placeholder="KM">
+                                        </div>
+                                        <div class="item-input">
+                                            Pista: <input type="number" id="pista" placeholder="KM">
+                                        </div>
+                                    </li>
+                                </ul>
+                                <span class="m-cidade"></span><span class="m-pista"></span>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <!-- FIM bloco -->
+                </div>
+                <!-- FIM página Index -->
+            </div>
+        </div>
+    </div>
+
+    <!-- area javascript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/framework7.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+</body>
+
+</html>

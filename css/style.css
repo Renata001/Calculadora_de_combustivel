@@ -1,0 +1,76 @@
+/* alterando a cor da index */
+
+.navbar-inner,
+.button {
+    background: #030441!important;
+}
+
+.page-content {
+    background: #fff;
+    /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to top, #fcb045, #fd1d1d, #833ab4);  Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to top, #fcb045, #fd1d1d, #833ab4); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.item-title {
+    font-size: 10px!important;
+}
+
+.list ul {
+    background: rgba(255, 255, 255, 0.07)!important;
+    /* color: #fff; */
+}
+
+.list input[type=number] {
+    color: #000000!important;
+}
+
+
+/* ::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.5)!important;
+    font-weight: 300;
+} */
+
+.item-input-wrap {
+    padding: 7px 0 !important;
+}
+
+.item-content.item-input {
+    border: 1px solid rgba(255, 255, 255, 0.36);
+    margin: 8px 0;
+}
+
+.f7-icons.login {
+    font-size: 5rem;
+}
+
+.btn-75 {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.btn-50 {
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+/* tirando o xizinho */
+
+.input-clear-button {
+    visibility: hidden!important;
+}
+
+.small {
+    font-size: 0.8 em;
+}
+
+.disabled,
+[disabled] {
+    opacity: 0.5;
+    pointer-events: none;
+}
+.bg-black{
+    background-color: #121212!important;
+    color: #fff;
+}
